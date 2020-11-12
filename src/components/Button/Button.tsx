@@ -56,12 +56,20 @@ const SButton = styled.button<ButtonProps>`
 
 const Button: React.FC<IButtonProps> = ({
   onClick,
+  buttonType,
   size = Size.lg,
   disabled = false,
   text,
+  // stretch = false,
 }) => {
   return (
-    <SButton onClick={onClick} size={size} disabled={disabled}>
+    <SButton
+      type={buttonType}
+      onClick={onClick}
+      // stretch={stretch}
+      size={size}
+      disabled={disabled}
+    >
       {text}
     </SButton>
   )

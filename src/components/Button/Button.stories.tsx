@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 import Button from './Button'
 import { IButtonProps } from '../../models'
@@ -19,7 +19,7 @@ Disabled.args = {
   text: 'disabled!',
   disabled: false,
   size: 'lg',
-  onClick: () => console.log('Work!'),
+  onClick: () => alert('Work!'),
 }
 
 export const Primary = Template.bind({})
