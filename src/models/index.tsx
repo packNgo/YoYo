@@ -5,6 +5,7 @@ export interface IButtonProps {
   text: string
   disabled?: boolean
   size?: Size
-  // stretch?: boolean
+  stretch?: boolean
   onClick?: () => void
+  onKeyUp?: () => void
 }

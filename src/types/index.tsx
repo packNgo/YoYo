@@ -1,3 +1,3 @@
 import { IButtonProps } from './../models'
 
-export type ButtonProps = Pick<IButtonProps, 'size'>
+export type TypeButtonProps = Pick<IButtonProps, 'size' | 'stretch'>

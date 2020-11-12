@@ -9,6 +9,8 @@ export default {
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
+    onClick: { action: 'onClick' },
+    onKeyUp: { action: 'onKeyUp' },
   },
 } as Meta
 
@@ -17,9 +19,8 @@ const Template: Story<IButtonProps> = (args) => <Button {...args} />
 export const Disabled = Template.bind({})
 Disabled.args = {
   text: 'disabled!',
-  disabled: false,
+  disabled: true,
   size: 'lg',
-  onClick: () => alert('Work!'),
 }
 
 export const Primary = Template.bind({})

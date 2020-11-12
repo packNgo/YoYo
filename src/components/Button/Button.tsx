@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { Size } from '../../enums'
 import { IButtonProps } from './../../models'
-import { ButtonProps } from '../../types'
+import { TypeButtonProps } from '../../types'
 
 const setSize = (size?: Size) => {
   switch (size) {
@@ -49,24 +49,26 @@ const setSize = (size?: Size) => {
       `
   }
 }
-
-const SButton = styled.button<ButtonProps>`
-  ${(props) => setSize(props.size)}
+const SButton = styled.button<TypeButtonProps>`
+  ${(props) => setSize(props.size)};
+  ${(props) => props.stretch && 'width: 100%'};
 `
 
 const Button: React.FC<IButtonProps> = ({
   onClick,
+  onKeyUp,
   buttonType,
   size = Size.lg,
   disabled = false,
   text,
-  // stretch = false,
+  stretch = false,
 }) => {
   return (
     <SButton
+      stretch={stretch}
       type={buttonType}
       onClick={onClick}
-      // stretch={stretch}
+      onKeyUp={onKeyUp}
       size={size}
       disabled={disabled}
     >
