@@ -9,3 +9,7 @@ export interface IButtonProps {
   onClick?: () => void
   onKeyUp?: () => void
 }
+
+export interface ISubtitleProps{
+  text: string;
+}
