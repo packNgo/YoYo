@@ -16,4 +16,5 @@ export interface ITypographyProps{
   color?: string;
   align?: 'center' | 'left' | 'right';
   fontFamily?: string;
+  weight?: string;
 }

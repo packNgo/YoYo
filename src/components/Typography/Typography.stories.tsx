@@ -15,7 +15,8 @@ const Template: Story<ITypographyProps>= (args) => <Typography {...args} />;
 export const PageTitle= Template.bind({});
 PageTitle.args={
     text: 'Page title',
-    typographyType: TypographyType.pageTitle
+    typographyType: TypographyType.pageTitle,
+    weight: '100'
 }
 
 export const PageSubtitle= Template.bind({});
@@ -35,13 +36,15 @@ export const Heading2= Template.bind({});
 Heading2.args={
     text: 'heading 2',
     typographyType: TypographyType.heading2,
-    color: '#800020'
+    color: '#800020',
+    weight: '400'
 }
 
 export const Heading3= Template.bind({});
 Heading3.args={
     text: 'heading 3',
-    typographyType: TypographyType.heading3
+    typographyType: TypographyType.heading3,
+    weight: '600'
 }
 
 export const body= Template.bind({});
