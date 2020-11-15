@@ -1,4 +1,4 @@
-import { Size } from '../enums'
+import { Size, TypographyType } from '../enums'
 
 export interface IButtonProps {
   buttonType?: JSX.IntrinsicElements['button']['type']
@@ -10,6 +10,10 @@ export interface IButtonProps {
   onKeyUp?: () => void
 }
 
-export interface ISubtitleProps{
+export interface ITypographyProps{
   text: string;
+  typographyType: TypographyType;
+  color?: string;
+  align?: 'center' | 'left' | 'right';
+  fontFamily?: string;
 }
