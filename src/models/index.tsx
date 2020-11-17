@@ -1,4 +1,5 @@
 import { Size } from '../enums'
+import { Shape } from '../enums'
 
 export interface IButtonProps {
   buttonType?: JSX.IntrinsicElements['button']['type']
@@ -8,4 +9,10 @@ export interface IButtonProps {
   stretch?: boolean
   onClick?: () => void
   onKeyUp?: () => void
+}
+export interface IDividerProps {
+  
+  color?:string,
+  width?:string,
+  shape?: Shape
 }
