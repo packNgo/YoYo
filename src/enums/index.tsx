@@ -11,7 +11,6 @@ export enum Defualtcharacters{
 }
 
 export enum Shape{
-
   circle ='circle',
   pentagon='pentagon',
   hexagon='hexagon',
@@ -24,8 +23,6 @@ export enum Shape{
   ellipse='ellipse',
   diamond='diamond',
   bevel='bevel',
-
-
- 
+  
 }
 

@@ -122,7 +122,7 @@ const Avatar: React.FC<IAvatarProps> = ({
   size = Size.md,
   backgroundColor,
   src,
-  shape = Shape.circle
+  shape ,
   
 }) => {
   return (
